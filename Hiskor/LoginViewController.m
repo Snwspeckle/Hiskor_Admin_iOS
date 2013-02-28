@@ -10,7 +10,7 @@
 #import "Lockbox.h"
 #import <CommonCrypto/CommonDigest.h>
 
-#define kUsernameKeyString          @"UsernameKeyString"
+#define kUserIDKeyString          @"UserIDKeyString"
 #define kTokenKeyString             @"TokenKeyString"
 #define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
 #define salt                        @"FSF^D&*FH#RJNF@!$JH#@$"
@@ -40,6 +40,7 @@
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,7 +75,7 @@
 
 - (void)networkingResponseReceived:(id)response ForMessage:(NSDictionary *)message {
 	
-	NSLog(@"Email: %@", [response valueForKeyPath:@"email"]);
+	NSLog(@"UserID: %@", [response valueForKeyPath:@"userID"]);
 	NSLog(@"Token: %@", [response valueForKeyPath:@"token"]);
 	NSLog(@"Return Message: %@", [response valueForKeyPath:@"message"]);
 	
@@ -90,14 +91,23 @@
 		
 		[loginAlert show];
 		
-		// Save username to keychain
-		[Lockbox setString:[response valueForKeyPath:@"email"] forKey:kUsernameKeyString];
+		// Save userID to keychain
+		[Lockbox setString:[response valueForKeyPath:@"userID"] forKey:kUserIDKeyString];
 		
 		// Save token to keychain
 		[Lockbox setString:[response valueForKeyPath:@"token"] forKey:kTokenKeyString];
 		
 		// Save login status to keychain
 		[Lockbox setString:@"TRUE" forKey:kLoggedinStatusKeyString];
+        
+        // Calls the loadGames method in HomeTableViewController
+        UITabBarController *tabBarController = (UITabBarController *)self.presentingViewController;
+        
+        UINavigationController *navController = [tabBarController.viewControllers objectAtIndex:0];
+        
+        HomeTableViewController *homeViewController =[navController.viewControllers objectAtIndex:0];
+        
+        [homeViewController loadGames];
 		
 		[self dismissViewControllerAnimated:YES completion:nil];
 	}
@@ -112,7 +122,7 @@
 // Keychain Checker Function
 - (IBAction)btnKeychainChecker:(id)sender {
     
-    NSLog(@"Keychain email: %@", [Lockbox stringForKey:kUsernameKeyString]);
+    NSLog(@"Keychain UserID: %@", [Lockbox stringForKey:kUserIDKeyString]);
     NSLog(@"Keychain token: %@", [Lockbox stringForKey:kTokenKeyString]);
     NSLog(@"Keychain login status: %@", [Lockbox stringForKey:kLoggedinStatusKeyString]);
 
