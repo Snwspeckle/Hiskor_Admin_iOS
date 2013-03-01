@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBarReaderViewController.h"
+#import "NetworkingManager.h"
 
-@interface CheckInViewController : UIViewController
+@interface CheckInViewController : UIViewController <ZBarReaderDelegate, NetworkingResponseHandler>
+
+- (void) checkTicketForString:(NSString *)ticketCode;
 
 @property (nonatomic, strong) NSDictionary *gameData;
+@property (nonatomic, retain) IBOutlet UITextView *resultText;
+
 @end
