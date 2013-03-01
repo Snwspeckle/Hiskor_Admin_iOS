@@ -14,6 +14,7 @@
 
 - (void) checkTicketForString:(NSString *)ticketCode;
 
+@property (nonatomic, strong) NSDictionary *JSONResponse;
 @property (nonatomic, strong) NSDictionary *gameData;
 @property (nonatomic, retain) IBOutlet UITextView *resultText;
 

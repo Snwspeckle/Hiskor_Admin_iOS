@@ -15,7 +15,7 @@
 @end
 
 @implementation CheckInViewController
-@synthesize gameData, resultText;
+@synthesize JSONResponse, gameData, resultText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -77,6 +77,25 @@
     
 	[NetworkingManager sendDictionary:params responseHandler:self];
     
+}
+
+- (void)networkingResponseReceived:(id)response ForMessage:(NSDictionary *)message {
+	
+	if ([[response valueForKeyPath:@"message"] isEqualToString:@"Failed"]) {
+		
+		UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle:@"Game pull failed" message:@"An error has occured pulling games" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+		
+		[loginAlert show];
+		
+	} else {
+		NSLog(@"JSON Response: %@", response);
+	}
+}
+
+- (void)networkingResponseFailedForMessage:(NSDictionary *)message error:(NSError *)error {
+	
+	NSLog(@"Error with request");
+	NSLog(@"%@", [error localizedDescription]);
 }
 
 @end
