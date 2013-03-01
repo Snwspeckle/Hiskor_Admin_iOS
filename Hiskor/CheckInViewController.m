@@ -34,8 +34,8 @@
     
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
-    [reader.scanner setSymbology: ZBAR_QRCODE config: ZBAR_CFG_ENABLE to: 0];
-    reader.readerView.zoom = 1.0;
+    ZBarImageScanner *scanner = reader.scanner;
+    [scanner setSymbology: ZBAR_QRCODE config: ZBAR_CFG_ENABLE to: 0];
     [self presentModalViewController: reader animated: YES];
 
 }
@@ -48,8 +48,7 @@
 
 - (void) imagePickerController: (UIImagePickerController*) reader didFinishPickingMediaWithInfo: (NSDictionary*) info {
     // ADD: get the decode results
-    id<NSFastEnumeration> results =
-    [info objectForKey: ZBarReaderControllerResults];
+    id<NSFastEnumeration> results = [info objectForKey: ZBarReaderControllerResults];
     ZBarSymbol *symbol = nil;
     for(symbol in results)
         // EXAMPLE: just grab the first barcode
