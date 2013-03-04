@@ -52,6 +52,10 @@
 		8FC5030816E1201300237DE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5030716E1201300237DE1 /* QuartzCore.framework */; };
 		8FC5030A16E1201B00237DE1 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5030916E1201B00237DE1 /* libiconv.dylib */; };
 		8FC5030E16E1218800237DE1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5030D16E1218800237DE1 /* MBProgressHUD.m */; };
+		8FC5031416E5250600237DE1 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031016E5250500237DE1 /* 37x-Checkmark.png */; };
+		8FC5031516E5250600237DE1 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */; };
+		8FC5031616E5250600237DE1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031216E5250500237DE1 /* Icon.png */; };
+		8FC5031716E5250600237DE1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031316E5250600237DE1 /* Icon@2x.png */; };
 		9236811B16BA29DD008384CD /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9236811A16BA29DD008384CD /* Lockbox.m */; };
 		9236811D16BA2B6C008384CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236811C16BA2B6C008384CD /* Security.framework */; };
 		92AD11D816BC32CD0090C148 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AD11D716BC32CD0090C148 /* HomeTableViewController.m */; };
@@ -143,6 +147,10 @@
 		8FC5030916E1201B00237DE1 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		8FC5030C16E1218800237DE1 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		8FC5030D16E1218800237DE1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8FC5031016E5250500237DE1 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
+		8FC5031216E5250500237DE1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8FC5031316E5250600237DE1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		9236811916BA29DD008384CD /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
 		9236811A16BA29DD008384CD /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
 		9236811C16BA2B6C008384CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -317,6 +325,10 @@
 		8F7F09D716B3032F005F124D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FC5031016E5250500237DE1 /* 37x-Checkmark.png */,
+				8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */,
+				8FC5031216E5250500237DE1 /* Icon.png */,
+				8FC5031316E5250600237DE1 /* Icon@2x.png */,
 				8F7F09DF16B30422005F124D /* house.png */,
 				8F7F09D916B30348005F124D /* gear.png */,
 				8F7F09DA16B30348005F124D /* ticket.png */,
@@ -443,6 +455,10 @@
 				44B5E52516CC0B0000F538A5 /* zbar-help.html in Resources */,
 				44B5E52616CC0B0000F538A5 /* zbar-helpicons.png in Resources */,
 				44B5E52716CC0B0000F538A5 /* zbar-samples.png in Resources */,
+				8FC5031416E5250600237DE1 /* 37x-Checkmark.png in Resources */,
+				8FC5031516E5250600237DE1 /* 37x-Checkmark@2x.png in Resources */,
+				8FC5031616E5250600237DE1 /* Icon.png in Resources */,
+				8FC5031716E5250600237DE1 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

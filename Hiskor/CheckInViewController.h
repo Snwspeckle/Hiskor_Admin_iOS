@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "ZBarReaderViewController.h"
 #import "NetworkingManager.h"
+#import "MBProgressHUD.h"
 
-@interface CheckInViewController : UITableViewController <ZBarReaderDelegate, NetworkingResponseHandler>
+@interface CheckInViewController : UITableViewController <ZBarReaderDelegate, NetworkingResponseHandler, MBProgressHUDDelegate>
+{
+    MBProgressHUD *HUD;
+    long long expectedLength;
+	long long currentLength;
+}
 - (IBAction)refreshGames:(id)sender;
 - (IBAction)btnLogout:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *homeLabel;

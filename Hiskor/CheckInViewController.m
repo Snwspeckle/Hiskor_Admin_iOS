@@ -12,6 +12,7 @@
 #import "TabBarViewController.h"
 #import "Lockbox.h"
 #import "GamesTableViewCell.h"
+#import "MBProgressHUD.h"
 
 #define kUserIDKeyString          @"UserIDKeyString"
 #define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
@@ -174,6 +175,21 @@
             
         } else {
             NSLog(@"JSON Response: %@", response);
+            HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+            [self.modalViewController.view addSubview:HUD];
+            
+            // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
+            // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
+            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+            
+            // Set custom view mode
+            HUD.mode = MBProgressHUDModeCustomView;
+            
+            HUD.delegate = self;
+            HUD.labelText = @"Completed";
+            
+            [HUD show:YES];
+            [HUD hide:YES afterDelay:3];
         }
     }
 }
