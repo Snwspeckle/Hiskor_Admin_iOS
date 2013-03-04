@@ -35,7 +35,7 @@
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
     ZBarImageScanner *scanner = reader.scanner;
-    [scanner setSymbology: ZBAR_QRCODE config: ZBAR_CFG_ENABLE to: 0];
+    [scanner setSymbology: ZBAR_QRCODE config: ZBAR_CFG_ENABLE to: 1];
     [self presentModalViewController: reader animated: YES];
 
 }
