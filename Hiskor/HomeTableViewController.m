@@ -68,7 +68,6 @@
 	} else {
         JSONResponse = [response copy];
         games = [JSONResponse objectForKey:@"games"];
-		NSLog(@"JSON Response: %@", response);
         [self.tableView reloadData];
 	}
 }

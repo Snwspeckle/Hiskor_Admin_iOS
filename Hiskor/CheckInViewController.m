@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    NSLog(@"Game Data: %@", gameData);
+    //NSLog(@"Game Data: %@", gameData);
     
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
