@@ -169,27 +169,39 @@
         
         if ([[response valueForKeyPath:@"message"] isEqualToString:@"Failed"]) {
             
-            UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle:@"Error Scanning" message:@"An error has occured scanning ticket" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+            /*UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle:@"Error Scanning" message:@"An error has occured scanning ticket" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
             
-            [loginAlert show];
+            [loginAlert show];*/
+            
+            HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
+            [self.modalViewController.view addSubview:HUD];
+            
+            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"invalid.png"]];
+            
+            // Set custom view mode
+            HUD.mode = MBProgressHUDModeCustomView;
+            
+            HUD.delegate = self;
+            HUD.labelText = @"Invalid";
+            
+            [HUD show:YES];
+            [HUD hide:YES afterDelay:2];
             
         } else {
             NSLog(@"JSON Response: %@", response);
             HUD = [[MBProgressHUD alloc] initWithView:self.navigationController.view];
             [self.modalViewController.view addSubview:HUD];
             
-            // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
-            // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
-            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
+            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"valid.png"]];
             
             // Set custom view mode
             HUD.mode = MBProgressHUDModeCustomView;
             
             HUD.delegate = self;
-            HUD.labelText = @"Completed";
+            HUD.labelText = @"Valid";
             
             [HUD show:YES];
-            [HUD hide:YES afterDelay:3];
+            [HUD hide:YES afterDelay:2];
         }
     }
 }
