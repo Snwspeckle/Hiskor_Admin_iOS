@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8F7F09A016B2FAF3005F124D"
-               BuildableName = "Hiskor.app"
-               BlueprintName = "Hiskor"
-               ReferencedContainer = "container:Hiskor.xcodeproj">
+               BuildableName = "Hiskor Admin.app"
+               BlueprintName = "Hiskor Admin"
+               ReferencedContainer = "container:Hiskor Admin.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F7F09A016B2FAF3005F124D"
-            BuildableName = "Hiskor.app"
-            BlueprintName = "Hiskor"
-            ReferencedContainer = "container:Hiskor.xcodeproj">
+            BuildableName = "Hiskor Admin.app"
+            BlueprintName = "Hiskor Admin"
+            ReferencedContainer = "container:Hiskor Admin.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F7F09A016B2FAF3005F124D"
-            BuildableName = "Hiskor.app"
-            BlueprintName = "Hiskor"
-            ReferencedContainer = "container:Hiskor.xcodeproj">
+            BuildableName = "Hiskor Admin.app"
+            BlueprintName = "Hiskor Admin"
+            ReferencedContainer = "container:Hiskor Admin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8F7F09A016B2FAF3005F124D"
-            BuildableName = "Hiskor.app"
-            BlueprintName = "Hiskor"
-            ReferencedContainer = "container:Hiskor.xcodeproj">
+            BuildableName = "Hiskor Admin.app"
+            BlueprintName = "Hiskor Admin"
+            ReferencedContainer = "container:Hiskor Admin.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

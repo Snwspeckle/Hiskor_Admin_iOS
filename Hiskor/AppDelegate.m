@@ -17,6 +17,20 @@
 {
     // Override point for customization after application launch.
     
+    // Customization
+    UIImage *navBarImage = [UIImage imageNamed:@"nav-bar.png"];
+    
+    [[UINavigationBar appearance] setBackgroundImage:navBarImage forBarMetrics:UIBarMetricsDefault];
+    
+    UIImage *barButton = [[UIImage imageNamed:@"nav-button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    
+    [[UIBarButtonItem appearance] setBackgroundImage:barButton forState:UIControlStateNormal
+                                          barMetrics:UIBarMetricsDefault];
+    
+    UIImage *backButton = [[UIImage imageNamed:@"nav-back-button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0,15,0,6)];
+    
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButton forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
     NSLog(@" %@", [Lockbox stringForKey:kLoggedinStatusKeyString]);
     
     // Checks if login status has never been attempted, if not, set the status to FALSE

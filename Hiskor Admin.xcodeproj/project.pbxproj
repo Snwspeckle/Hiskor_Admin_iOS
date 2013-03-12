@@ -58,6 +58,24 @@
 		8FC5031516E5250600237DE1 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */; };
 		8FC5031616E5250600237DE1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031216E5250500237DE1 /* Icon.png */; };
 		8FC5031716E5250600237DE1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031316E5250600237DE1 /* Icon@2x.png */; };
+		8FDBC76516E67AE700BDF9DA /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC76316E67AE700BDF9DA /* Button.png */; };
+		8FDBC76616E67AE700BDF9DA /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC76416E67AE700BDF9DA /* Button@2x.png */; };
+		8FDBC77816E90F1C00BDF9DA /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC77316E90F1C00BDF9DA /* greyButton.png */; };
+		8FDBC77916E90F1C00BDF9DA /* greyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC77416E90F1C00BDF9DA /* greyButton@2x.png */; };
+		8FDBC77A16E90F1C00BDF9DA /* greyButton@2xpng in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC77516E90F1C00BDF9DA /* greyButton@2xpng */; };
+		8FDBC77B16E90F1C00BDF9DA /* greyButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC77616E90F1C00BDF9DA /* greyButtonHighlight.png */; };
+		8FDBC77C16E90F1C00BDF9DA /* greyButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC77716E90F1C00BDF9DA /* greyButtonHighlight@2x.png */; };
+		8FDBC78316E911DF00BDF9DA /* tasky_pattern_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC78116E911DF00BDF9DA /* tasky_pattern_@2X.png */; };
+		8FDBC78416E911DF00BDF9DA /* tasky_pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC78216E911DF00BDF9DA /* tasky_pattern.png */; };
+		8FDBC78716EA5A5700BDF9DA /* TextInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBC78616EA5A5700BDF9DA /* TextInputCell.m */; };
+		8FDBC78A16EA682200BDF9DA /* VerticallyCenteredTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDBC78916EA682200BDF9DA /* VerticallyCenteredTextField.m */; };
+		8FDBC78C16EA6E4F00BDF9DA /* cell.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC78B16EA6E4F00BDF9DA /* cell.png */; };
+		8FF8507E16EF92F200C4B8C7 /* nav-back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8507816EF92F200C4B8C7 /* nav-back-button.png */; };
+		8FF8507F16EF92F200C4B8C7 /* nav-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8507916EF92F200C4B8C7 /* nav-bar.png */; };
+		8FF8508116EF92F200C4B8C7 /* nav-back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8507B16EF92F200C4B8C7 /* nav-back-button@2x.png */; };
+		8FF8508216EF92F200C4B8C7 /* nav-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8507C16EF92F200C4B8C7 /* nav-bar@2x.png */; };
+		8FF8508616EF95DB00C4B8C7 /* nav-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8508416EF95DB00C4B8C7 /* nav-button.png */; };
+		8FF8508716EF95DB00C4B8C7 /* nav-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8508516EF95DB00C4B8C7 /* nav-button@2x.png */; };
 		9236811B16BA29DD008384CD /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9236811A16BA29DD008384CD /* Lockbox.m */; };
 		9236811D16BA2B6C008384CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236811C16BA2B6C008384CD /* Security.framework */; };
 		92AD11D816BC32CD0090C148 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AD11D716BC32CD0090C148 /* HomeTableViewController.m */; };
@@ -97,14 +115,14 @@
 		8F4EE5DA16B845AA003F6C74 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		8F5E162E16E66CBD00A46D37 /* valid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = valid.png; sourceTree = "<group>"; };
 		8F5E162F16E66CBD00A46D37 /* invalid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invalid.png; sourceTree = "<group>"; };
-		8F7F09A116B2FAF3005F124D /* Hiskor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hiskor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F7F09A116B2FAF3005F124D /* Hiskor Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hiskor Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F7F09A516B2FAF3005F124D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8F7F09A716B2FAF3005F124D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F7F09A916B2FAF3005F124D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		8F7F09AD16B2FAF3005F124D /* Hiskor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hiskor-Info.plist"; sourceTree = "<group>"; };
+		8F7F09AD16B2FAF3005F124D /* Hiskor Admin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hiskor Admin-Info.plist"; sourceTree = "<group>"; };
 		8F7F09AF16B2FAF3005F124D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8F7F09B116B2FAF3005F124D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8F7F09B316B2FAF3005F124D /* Hiskor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hiskor-Prefix.pch"; sourceTree = "<group>"; };
+		8F7F09B316B2FAF3005F124D /* Hiskor Admin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hiskor Admin-Prefix.pch"; sourceTree = "<group>"; };
 		8F7F09B416B2FAF3005F124D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F7F09B516B2FAF3005F124D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F7F09B716B2FAF3005F124D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -155,6 +173,26 @@
 		8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
 		8FC5031216E5250500237DE1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		8FC5031316E5250600237DE1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		8FDBC76316E67AE700BDF9DA /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		8FDBC76416E67AE700BDF9DA /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		8FDBC77316E90F1C00BDF9DA /* greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButton.png; sourceTree = "<group>"; };
+		8FDBC77416E90F1C00BDF9DA /* greyButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButton@2x.png"; sourceTree = "<group>"; };
+		8FDBC77516E90F1C00BDF9DA /* greyButton@2xpng */ = {isa = PBXFileReference; lastKnownFileType = file; path = "greyButton@2xpng"; sourceTree = "<group>"; };
+		8FDBC77616E90F1C00BDF9DA /* greyButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButtonHighlight.png; sourceTree = "<group>"; };
+		8FDBC77716E90F1C00BDF9DA /* greyButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		8FDBC78116E911DF00BDF9DA /* tasky_pattern_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tasky_pattern_@2X.png"; sourceTree = "<group>"; };
+		8FDBC78216E911DF00BDF9DA /* tasky_pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tasky_pattern.png; sourceTree = "<group>"; };
+		8FDBC78516EA5A5700BDF9DA /* TextInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputCell.h; sourceTree = "<group>"; };
+		8FDBC78616EA5A5700BDF9DA /* TextInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputCell.m; sourceTree = "<group>"; };
+		8FDBC78816EA682200BDF9DA /* VerticallyCenteredTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerticallyCenteredTextField.h; sourceTree = "<group>"; };
+		8FDBC78916EA682200BDF9DA /* VerticallyCenteredTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerticallyCenteredTextField.m; sourceTree = "<group>"; };
+		8FDBC78B16EA6E4F00BDF9DA /* cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell.png; sourceTree = "<group>"; };
+		8FF8507816EF92F200C4B8C7 /* nav-back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-back-button.png"; sourceTree = "<group>"; };
+		8FF8507916EF92F200C4B8C7 /* nav-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar.png"; sourceTree = "<group>"; };
+		8FF8507B16EF92F200C4B8C7 /* nav-back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-back-button@2x.png"; sourceTree = "<group>"; };
+		8FF8507C16EF92F200C4B8C7 /* nav-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar@2x.png"; sourceTree = "<group>"; };
+		8FF8508416EF95DB00C4B8C7 /* nav-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-button.png"; sourceTree = "<group>"; };
+		8FF8508516EF95DB00C4B8C7 /* nav-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-button@2x.png"; sourceTree = "<group>"; };
 		9236811916BA29DD008384CD /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
 		9236811A16BA29DD008384CD /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
 		9236811C16BA2B6C008384CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -252,7 +290,7 @@
 		8F7F099616B2FAF3005F124D = {
 			isa = PBXGroup;
 			children = (
-				8F7F09AB16B2FAF3005F124D /* Hiskor */,
+				8F7F09AB16B2FAF3005F124D /* Hiskor Admin */,
 				8F7F09A416B2FAF3005F124D /* Frameworks */,
 				8F7F09A216B2FAF3005F124D /* Products */,
 				8FC5030B16E1217000237DE1 /* MBProgressHUD */,
@@ -263,7 +301,7 @@
 		8F7F09A216B2FAF3005F124D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F7F09A116B2FAF3005F124D /* Hiskor.app */,
+				8F7F09A116B2FAF3005F124D /* Hiskor Admin.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,7 +325,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8F7F09AB16B2FAF3005F124D /* Hiskor */ = {
+		8F7F09AB16B2FAF3005F124D /* Hiskor Admin */ = {
 			isa = PBXGroup;
 			children = (
 				9236811916BA29DD008384CD /* Lockbox.h */,
@@ -308,6 +346,7 @@
 				8FC5030F16E121BF00237DE1 /* Customized Views */,
 				8F7F09AC16B2FAF3005F124D /* Supporting Files */,
 			);
+			name = "Hiskor Admin";
 			path = Hiskor;
 			sourceTree = "<group>";
 		};
@@ -315,10 +354,10 @@
 			isa = PBXGroup;
 			children = (
 				8F7F09D716B3032F005F124D /* Images */,
-				8F7F09AD16B2FAF3005F124D /* Hiskor-Info.plist */,
+				8F7F09AD16B2FAF3005F124D /* Hiskor Admin-Info.plist */,
 				8F7F09AE16B2FAF3005F124D /* InfoPlist.strings */,
 				8F7F09B116B2FAF3005F124D /* main.m */,
-				8F7F09B316B2FAF3005F124D /* Hiskor-Prefix.pch */,
+				8F7F09B316B2FAF3005F124D /* Hiskor Admin-Prefix.pch */,
 				8F7F09B716B2FAF3005F124D /* Default.png */,
 				8F7F09B916B2FAF3005F124D /* Default@2x.png */,
 				8F7F09BB16B2FAF3005F124D /* Default-568h@2x.png */,
@@ -329,6 +368,22 @@
 		8F7F09D716B3032F005F124D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FF8508416EF95DB00C4B8C7 /* nav-button.png */,
+				8FF8508516EF95DB00C4B8C7 /* nav-button@2x.png */,
+				8FF8507816EF92F200C4B8C7 /* nav-back-button.png */,
+				8FF8507916EF92F200C4B8C7 /* nav-bar.png */,
+				8FF8507B16EF92F200C4B8C7 /* nav-back-button@2x.png */,
+				8FF8507C16EF92F200C4B8C7 /* nav-bar@2x.png */,
+				8FDBC78B16EA6E4F00BDF9DA /* cell.png */,
+				8FDBC78116E911DF00BDF9DA /* tasky_pattern_@2X.png */,
+				8FDBC78216E911DF00BDF9DA /* tasky_pattern.png */,
+				8FDBC77316E90F1C00BDF9DA /* greyButton.png */,
+				8FDBC77416E90F1C00BDF9DA /* greyButton@2x.png */,
+				8FDBC77516E90F1C00BDF9DA /* greyButton@2xpng */,
+				8FDBC77616E90F1C00BDF9DA /* greyButtonHighlight.png */,
+				8FDBC77716E90F1C00BDF9DA /* greyButtonHighlight@2x.png */,
+				8FDBC76316E67AE700BDF9DA /* Button.png */,
+				8FDBC76416E67AE700BDF9DA /* Button@2x.png */,
 				8F5E162E16E66CBD00A46D37 /* valid.png */,
 				8F5E162F16E66CBD00A46D37 /* invalid.png */,
 				8FC5031016E5250500237DE1 /* 37x-Checkmark.png */,
@@ -389,6 +444,10 @@
 			children = (
 				8FC502FB16DFD48400237DE1 /* GamesTableViewCell.h */,
 				8FC502FC16DFD48400237DE1 /* GamesTableViewCell.m */,
+				8FDBC78516EA5A5700BDF9DA /* TextInputCell.h */,
+				8FDBC78616EA5A5700BDF9DA /* TextInputCell.m */,
+				8FDBC78816EA682200BDF9DA /* VerticallyCenteredTextField.h */,
+				8FDBC78916EA682200BDF9DA /* VerticallyCenteredTextField.m */,
 			);
 			name = "Customized Views";
 			sourceTree = "<group>";
@@ -396,9 +455,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F7F09A016B2FAF3005F124D /* Hiskor */ = {
+		8F7F09A016B2FAF3005F124D /* Hiskor Admin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F7F09D016B2FAF3005F124D /* Build configuration list for PBXNativeTarget "Hiskor" */;
+			buildConfigurationList = 8F7F09D016B2FAF3005F124D /* Build configuration list for PBXNativeTarget "Hiskor Admin" */;
 			buildPhases = (
 				8F7F099D16B2FAF3005F124D /* Sources */,
 				8F7F099E16B2FAF3005F124D /* Frameworks */,
@@ -408,9 +467,9 @@
 			);
 			dependencies = (
 			);
-			name = Hiskor;
+			name = "Hiskor Admin";
 			productName = Hiskor;
-			productReference = 8F7F09A116B2FAF3005F124D /* Hiskor.app */;
+			productReference = 8F7F09A116B2FAF3005F124D /* Hiskor Admin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -422,7 +481,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = ITP;
 			};
-			buildConfigurationList = 8F7F099B16B2FAF3005F124D /* Build configuration list for PBXProject "Hiskor" */;
+			buildConfigurationList = 8F7F099B16B2FAF3005F124D /* Build configuration list for PBXProject "Hiskor Admin" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -434,7 +493,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F7F09A016B2FAF3005F124D /* Hiskor */,
+				8F7F09A016B2FAF3005F124D /* Hiskor Admin */,
 			);
 		};
 /* End PBXProject section */
@@ -467,6 +526,22 @@
 				8FC5031716E5250600237DE1 /* Icon@2x.png in Resources */,
 				8F5E163016E66CBD00A46D37 /* valid.png in Resources */,
 				8F5E163116E66CBD00A46D37 /* invalid.png in Resources */,
+				8FDBC76516E67AE700BDF9DA /* Button.png in Resources */,
+				8FDBC76616E67AE700BDF9DA /* Button@2x.png in Resources */,
+				8FDBC77816E90F1C00BDF9DA /* greyButton.png in Resources */,
+				8FDBC77916E90F1C00BDF9DA /* greyButton@2x.png in Resources */,
+				8FDBC77A16E90F1C00BDF9DA /* greyButton@2xpng in Resources */,
+				8FDBC77B16E90F1C00BDF9DA /* greyButtonHighlight.png in Resources */,
+				8FDBC77C16E90F1C00BDF9DA /* greyButtonHighlight@2x.png in Resources */,
+				8FDBC78316E911DF00BDF9DA /* tasky_pattern_@2X.png in Resources */,
+				8FDBC78416E911DF00BDF9DA /* tasky_pattern.png in Resources */,
+				8FDBC78C16EA6E4F00BDF9DA /* cell.png in Resources */,
+				8FF8507E16EF92F200C4B8C7 /* nav-back-button.png in Resources */,
+				8FF8507F16EF92F200C4B8C7 /* nav-bar.png in Resources */,
+				8FF8508116EF92F200C4B8C7 /* nav-back-button@2x.png in Resources */,
+				8FF8508216EF92F200C4B8C7 /* nav-bar@2x.png in Resources */,
+				8FF8508616EF95DB00C4B8C7 /* nav-button.png in Resources */,
+				8FF8508716EF95DB00C4B8C7 /* nav-button@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +571,8 @@
 				8FC502FD16DFD48400237DE1 /* GamesTableViewCell.m in Sources */,
 				8FC5030016DFD75300237DE1 /* CheckInViewController.m in Sources */,
 				8FC5030E16E1218800237DE1 /* MBProgressHUD.m in Sources */,
+				8FDBC78716EA5A5700BDF9DA /* TextInputCell.m in Sources */,
+				8FDBC78A16EA682200BDF9DA /* VerticallyCenteredTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,13 +652,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Hiskor/Hiskor-Prefix.pch";
-				INFOPLIST_FILE = "Hiskor/Hiskor-Info.plist";
+				GCC_PREFIX_HEADER = "Hiskor/Hiskor Admin-Prefix.pch";
+				INFOPLIST_FILE = "Hiskor/Hiskor Admin-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hiskor Admin";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -590,13 +667,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Hiskor/Hiskor-Prefix.pch";
-				INFOPLIST_FILE = "Hiskor/Hiskor-Info.plist";
+				GCC_PREFIX_HEADER = "Hiskor/Hiskor Admin-Prefix.pch";
+				INFOPLIST_FILE = "Hiskor/Hiskor Admin-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/ZBarSDK\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Hiskor Admin";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -604,7 +681,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F7F099B16B2FAF3005F124D /* Build configuration list for PBXProject "Hiskor" */ = {
+		8F7F099B16B2FAF3005F124D /* Build configuration list for PBXProject "Hiskor Admin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F7F09CE16B2FAF3005F124D /* Debug */,
@@ -613,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F7F09D016B2FAF3005F124D /* Build configuration list for PBXNativeTarget "Hiskor" */ = {
+		8F7F09D016B2FAF3005F124D /* Build configuration list for PBXNativeTarget "Hiskor Admin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F7F09D116B2FAF3005F124D /* Debug */,

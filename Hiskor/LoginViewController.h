@@ -10,11 +10,16 @@
 #import "NetworkingManager.h"
 #import "HomeTableViewController.h"
 
-@interface LoginViewController : UIViewController <NetworkingResponseHandler>
+@interface LoginViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NetworkingResponseHandler, UITextFieldDelegate>
+{
+    UITableView *mainLoginInfo;
+    UITextField *usernameField;
+    UITextField *passwordField;
+}
+
 - (IBAction)btnLogin:(id)sender;
 - (IBAction)btnKeychainChecker:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UITextField *usernameField;
-@property (strong, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 
 @end
