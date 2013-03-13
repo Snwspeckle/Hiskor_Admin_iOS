@@ -55,11 +55,6 @@
                         <sections/>
                     </tableView>
                     <navigationItem key="navigationItem" title="Check-In" id="lCl-jz-s9k">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="b7H-n2-l9G">
-                            <connections>
-                                <action selector="refreshGames:" destination="9zp-s5-Nmp" id="IFz-Fv-9eB"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="dfF-KY-uvY">
                             <connections>
                                 <action selector="btnLogout:" destination="9zp-s5-Nmp" id="N8x-M8-SB5"/>
@@ -227,7 +222,7 @@
         <image name="ticket.png" width="30" height="30"/>
     </resources>
     <classes>
-        <class className="CheckInViewController" superclassName="UITableViewController">
+        <class className="CheckInViewController" superclassName="PullRefreshTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CheckInViewController.h"/>
             <relationships>
                 <relationship kind="action" name="btnLogout:"/>
@@ -254,6 +249,9 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PullRefreshTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PullRefreshTableViewController.h"/>
         </class>
         <class className="TabBarViewController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TabBarViewController.h"/>

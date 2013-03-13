@@ -38,6 +38,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //NSLog(@"Game Data: %@", gameData);
+    [self.refreshControl addTarget:self action:@selector(refreshView:) forControlEvents:UIControlEventValueChanged];
 }
 
 - (void)didReceiveMemoryWarning
@@ -214,6 +215,21 @@
 
 - (IBAction)refreshGames:(id)sender {
     [self loadGames];
+}
+
+- (void)refresh {
+    [self performSelector:@selector(addItem) withObject:nil afterDelay:2.0];
+}
+
+- (void)addItem {
+    // Add a new time
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
+    NSString *now = [dateFormatter stringFromDate:[NSDate date]];
+    [items insertObject:[NSString stringWithFormat:@"%@", now] atIndex:0];
+    
+    [self loadGames];    
+    [self stopLoading];
 }
 
 - (IBAction)btnLogout:(id)sender {

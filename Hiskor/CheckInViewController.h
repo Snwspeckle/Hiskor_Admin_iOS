@@ -10,14 +10,16 @@
 #import "ZBarReaderViewController.h"
 #import "NetworkingManager.h"
 #import "MBProgressHUD.h"
+#import "PullRefreshTableViewController.h"
 
-@interface CheckInViewController : UITableViewController <ZBarReaderDelegate, NetworkingResponseHandler, MBProgressHUDDelegate>
+@interface CheckInViewController : PullRefreshTableViewController <ZBarReaderDelegate, NetworkingResponseHandler, MBProgressHUDDelegate>
 {
     MBProgressHUD *HUD;
     long long expectedLength;
 	long long currentLength;
+    NSMutableArray *items;
 }
-- (IBAction)refreshGames:(id)sender;
+
 - (IBAction)btnLogout:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *homeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *awayLabel;
