@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NetworkingManager.h"
-#import "HomeTableViewController.h"
+#import "CheckInViewController.h"
 
 @interface LoginViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NetworkingResponseHandler, UITextFieldDelegate>
 {
@@ -18,7 +18,6 @@
 }
 
 - (IBAction)btnLogin:(id)sender;
-- (IBAction)btnKeychainChecker:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnLogin;
 

@@ -31,7 +31,7 @@
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"tasky_pattern.png"]];
     
     // Creates the login form
-    mainLoginInfo  = [[UITableView alloc] initWithFrame:CGRectMake(15,110, 290,150) style:UITableViewStyleGrouped];
+    mainLoginInfo  = [[UITableView alloc] initWithFrame:CGRectMake(15,110, 300,150) style:UITableViewStyleGrouped];
     mainLoginInfo.dataSource = self;
     mainLoginInfo.delegate = self;
     [self.view addSubview:mainLoginInfo];
@@ -204,14 +204,14 @@
 		// Save login status to keychain
 		[Lockbox setString:@"TRUE" forKey:kLoggedinStatusKeyString];
         
-        // Calls the loadGames method in HomeTableViewController
+        // Calls the loadGames method in CheckInViewController
         UITabBarController *tabBarController = (UITabBarController *)self.presentingViewController;
         
         UINavigationController *navController = [tabBarController.viewControllers objectAtIndex:0];
         
-        HomeTableViewController *homeViewController =[navController.viewControllers objectAtIndex:0];
+        CheckInViewController *checkInViewController =[navController.viewControllers objectAtIndex:0];
         
-        [homeViewController loadGames];
+        [checkInViewController loadGames];
 		
 		[self dismissViewControllerAnimated:YES completion:nil];
 	}
@@ -222,16 +222,6 @@
 	NSLog(@"Error with request");
 	NSLog(@"%@", [error localizedDescription]);
 }
-
-// Keychain Checker Function
-- (IBAction)btnKeychainChecker:(id)sender {
-    
-    NSLog(@"Keychain UserID: %@", [Lockbox stringForKey:kUserIDKeyString]);
-    NSLog(@"Keychain token: %@", [Lockbox stringForKey:kTokenKeyString]);
-    NSLog(@"Keychain login status: %@", [Lockbox stringForKey:kLoggedinStatusKeyString]);
-
-}
-
 
 // MD5 Hashing Function
 - (NSString *)md5:(NSString *) input {

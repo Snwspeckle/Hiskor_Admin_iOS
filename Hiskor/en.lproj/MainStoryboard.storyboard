@@ -11,9 +11,9 @@
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="T7l-lG-hrB">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="66" id="Cck-Se-CTN" customClass="GamesTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" id="Cck-Se-CTN" customClass="GamesTableViewCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -39,28 +39,22 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="cXZ-s2-fxC" firstAttribute="top" secondItem="Cck-Se-CTN" secondAttribute="top" constant="22" id="05S-SD-ZWU"/>
-                                    <constraint firstItem="cXZ-s2-fxC" firstAttribute="leading" secondItem="Cck-Se-CTN" secondAttribute="leading" constant="139" id="Cwl-nS-Lcc"/>
-                                    <constraint firstItem="cXZ-s2-fxC" firstAttribute="baseline" secondItem="Zdh-5r-4dO" secondAttribute="baseline" type="default" id="Duu-SC-b5r"/>
-                                    <constraint firstAttribute="trailing" secondItem="TBS-TU-mFd" secondAttribute="trailing" constant="40" id="ZzB-j3-aKK"/>
-                                    <constraint firstItem="TBS-TU-mFd" firstAttribute="baseline" secondItem="cXZ-s2-fxC" secondAttribute="baseline" type="default" id="qw8-RK-qKX"/>
-                                    <constraint firstItem="Zdh-5r-4dO" firstAttribute="leading" secondItem="Cck-Se-CTN" secondAttribute="leading" constant="20" type="default" id="r6k-Zz-nv6"/>
+                                    <constraint firstItem="Zdh-5r-4dO" firstAttribute="baseline" secondItem="cXZ-s2-fxC" secondAttribute="baseline" type="default" id="5IJ-gA-xzz"/>
+                                    <constraint firstItem="TBS-TU-mFd" firstAttribute="baseline" secondItem="cXZ-s2-fxC" secondAttribute="baseline" type="default" id="P7C-sC-DEy"/>
+                                    <constraint firstItem="Zdh-5r-4dO" firstAttribute="top" secondItem="Cck-Se-CTN" secondAttribute="top" constant="22" id="YU4-OW-4Tz"/>
+                                    <constraint firstAttribute="trailing" secondItem="TBS-TU-mFd" secondAttribute="trailing" constant="40" id="byt-sN-enQ"/>
+                                    <constraint firstItem="cXZ-s2-fxC" firstAttribute="leading" secondItem="Cck-Se-CTN" secondAttribute="leading" constant="139" id="epJ-bW-CMy"/>
+                                    <constraint firstItem="Zdh-5r-4dO" firstAttribute="leading" secondItem="Cck-Se-CTN" secondAttribute="leading" constant="20" type="default" id="yqX-ui-Yt5"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="awayLabel" destination="TBS-TU-mFd" id="ZmA-Sa-weN"/>
-                                    <outlet property="homeLabel" destination="Zdh-5r-4dO" id="kPR-yb-0hL"/>
+                                    <outlet property="awayLabel" destination="TBS-TU-mFd" id="2nr-HC-7xO"/>
+                                    <outlet property="homeLabel" destination="Zdh-5r-4dO" id="iV3-WM-DGD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Check-In" id="lCl-jz-s9k">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="dfF-KY-uvY">
-                            <connections>
-                                <action selector="btnLogout:" destination="9zp-s5-Nmp" id="N8x-M8-SB5"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Check-In" id="lCl-jz-s9k"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hVT-eq-QNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,27 +76,74 @@
             </objects>
             <point key="canvasLocation" x="663" y="-160"/>
         </scene>
-        <!--Table View Controller - Settings-->
+        <!--Settings Table View Controller - Settings-->
         <scene sceneID="hdY-Or-IsW">
             <objects>
-                <tableViewController id="fU7-Vk-R9c" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="J1f-Vm-hDf">
+                <tableViewController id="fU7-Vk-R9c" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="J1f-Vm-hDf">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4r2-EU-41t">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="My Account" id="Vls-p7-fz1">
+                                <cells>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="56A-yl-4mP" detailTextLabel="6D1-7W-u6p" style="IBUITableViewCellStyleValue1" id="KdQ-0a-YTf">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56A-yl-4mP">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6D1-7W-u6p">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="xYd-Y1-yPr" detailTextLabel="j3K-cB-TnK" style="IBUITableViewCellStyleValue1" id="ETq-DB-rbP">
+                                        <rect key="frame" x="0.0" y="91" width="320" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="School" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYd-Y1-yPr">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3K-cB-TnK">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="wtQ-OX-NPM"/>
+                    <navigationItem key="navigationItem" title="Settings" id="wtQ-OX-NPM">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="lFL-gF-qXf">
+                            <connections>
+                                <action selector="btnLogout:" destination="fU7-Vk-R9c" id="QaA-rY-eLs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="labelEmail" destination="6D1-7W-u6p" id="ePA-c6-9IN"/>
+                        <outlet property="labelSchool" destination="j3K-cB-TnK" id="HJH-Vg-VWa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1u-jb-HSJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,19 +189,6 @@
                                     <action selector="btnLogin:" destination="nMK-w8-8rx" eventType="touchUpInside" id="w9w-yz-7iJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53E-Es-VSD">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Check Keychain Credentials">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnKeychainChecker:" destination="nMK-w8-8rx" eventType="touchUpInside" id="ZRL-gO-qXf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-g6-r38">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="HO5-cM-kDg"/>
@@ -181,9 +209,7 @@
                         <constraints>
                             <constraint firstItem="gXE-sk-Rle" firstAttribute="centerX" secondItem="ndQ-g6-r38" secondAttribute="centerX" type="default" id="9q0-ej-RYF"/>
                             <constraint firstItem="ndQ-g6-r38" firstAttribute="top" secondItem="Vnx-Pw-l0f" secondAttribute="top" constant="47" id="KPm-Mx-wSa"/>
-                            <constraint firstItem="gXE-sk-Rle" firstAttribute="centerX" secondItem="53E-Es-VSD" secondAttribute="centerX" type="default" id="T3x-Ja-6Be"/>
                             <constraint firstItem="gXE-sk-Rle" firstAttribute="top" secondItem="Vnx-Pw-l0f" secondAttribute="top" constant="229" id="Yj4-AO-3bO"/>
-                            <constraint firstAttribute="bottom" secondItem="53E-Es-VSD" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="klm-RI-DQe"/>
                             <constraint firstItem="ndQ-g6-r38" firstAttribute="leading" secondItem="Vnx-Pw-l0f" secondAttribute="leading" type="default" id="ukl-0U-10j"/>
                             <constraint firstItem="ndQ-g6-r38" firstAttribute="trailing" secondItem="Vnx-Pw-l0f" secondAttribute="trailing" type="default" id="x1Z-hd-SOS"/>
                         </constraints>
@@ -226,9 +252,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CheckInViewController.h"/>
             <relationships>
                 <relationship kind="action" name="btnLogout:"/>
-                <relationship kind="action" name="refreshGames:"/>
-                <relationship kind="outlet" name="awayLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="homeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="resultText" candidateClass="UITextView"/>
             </relationships>
         </class>
@@ -252,6 +275,14 @@
         </class>
         <class className="PullRefreshTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PullRefreshTableViewController.h"/>
+        </class>
+        <class className="SettingsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnLogout:"/>
+                <relationship kind="outlet" name="labelEmail" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelSchool" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="TabBarViewController" superclassName="UITabBarController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TabBarViewController.h"/>

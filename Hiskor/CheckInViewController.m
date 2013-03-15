@@ -11,8 +11,8 @@
 #import "ZBarReaderView.h"
 #import "TabBarViewController.h"
 #import "Lockbox.h"
-#import "GamesTableViewCell.h"
 #import "MBProgressHUD.h"
+#import "GamesTableViewCell.h"
 
 #define kUserIDKeyString          @"UserIDKeyString"
 #define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
@@ -22,16 +22,7 @@
 @end
 
 @implementation CheckInViewController
-@synthesize JSONResponse, gameData, resultText, animateBOOL, games;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@synthesize JSONResponse, gameData, resultText, games;
 
 - (void)viewDidLoad
 {
@@ -90,6 +81,18 @@
     return [games count];
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0 || indexPath.row%2 == 0) {
+        cell.backgroundColor = [UIColor colorWithRed:.90 green:.90 blue:.90 alpha:1];
+    }
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    view.backgroundColor = [UIColor whiteColor];
+    return view;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
@@ -107,7 +110,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //[self performSegueWithIdentifier:@"checkIn" sender:indexPath];
     
     ZBarReaderViewController *reader = [ZBarReaderViewController new];
     reader.readerDelegate = self;
@@ -230,13 +232,6 @@
     
     [self loadGames];    
     [self stopLoading];
-}
-
-- (IBAction)btnLogout:(id)sender {
-    
-    self.animateBOOL = YES;
-    [Lockbox setString:@"FALSE" forKey:kLoggedinStatusKeyString];
-    [(TabBarViewController *)[self tabBarController] loginCheck:self.animateBOOL];
 }
 
 @end

@@ -20,10 +20,6 @@
     NSMutableArray *items;
 }
 
-- (IBAction)btnLogout:(id)sender;
-@property (weak, nonatomic) IBOutlet UILabel *homeLabel;
-@property (weak, nonatomic) IBOutlet UILabel *awayLabel;
-
 - (void) loadGames;
 - (void) checkTicketForString:(NSString *)ticketCode;
 
