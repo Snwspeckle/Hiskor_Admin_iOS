@@ -208,10 +208,13 @@
         UITabBarController *tabBarController = (UITabBarController *)self.presentingViewController;
         
         UINavigationController *navController = [tabBarController.viewControllers objectAtIndex:0];
+        UINavigationController *settingsNavController = [tabBarController.viewControllers objectAtIndex:1];
         
-        CheckInViewController *checkInViewController =[navController.viewControllers objectAtIndex:0];
+        CheckInViewController *checkInViewController = [navController.viewControllers objectAtIndex:0];
+        SettingsTableViewController *settingsTableViewController = [settingsNavController.viewControllers objectAtIndex:0];
         
         [checkInViewController loadGames];
+        [settingsTableViewController loadSettings];
 		
 		[self dismissViewControllerAnimated:YES completion:nil];
 	}

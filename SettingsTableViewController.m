@@ -43,7 +43,7 @@
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             userID, @"userID",
-                            type, @"settings",
+                            type, @"type",
                             nil];
     
 	[NetworkingManager sendDictionary:params responseHandler:self];
@@ -52,9 +52,6 @@
 
 - (void)networkingResponseReceived:(id)response ForMessage:(NSDictionary *)message {
     
-    // Filters the type of response, checks if response is game
-    if ([[message valueForKeyPath:@"type"] isEqualToString:@"game"]) {
-        
         if ([[response valueForKeyPath:@"message"] isEqualToString:@"Failed"]) {
             
             UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle:@"Settings pull failed" message:@"An error has occured pulling games" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
@@ -64,10 +61,11 @@
         } else {
             NSLog(@"Settings Response: %@", response);
             JSONResponse = [response copy];
-            settings = [JSONResponse objectForKey:@"games"];
+            //settings = [JSONResponse objectForKey:@"games"];
+            labelEmail.text = [JSONResponse objectForKey:@"email"];
+            labelSchool.text = [JSONResponse objectForKey:@"schoolName"];
             [self.tableView reloadData];
         }
-    }
 }
 
 - (void)networkingResponseFailedForMessage:(NSDictionary *)message error:(NSError *)error {

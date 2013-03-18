@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NetworkingManager.h"
 #import "CheckInViewController.h"
+#import "SettingsTableViewController.h"
 
 @interface LoginViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NetworkingResponseHandler, UITextFieldDelegate>
 {
