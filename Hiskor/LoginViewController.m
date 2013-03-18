@@ -11,12 +11,6 @@
 #import <CommonCrypto/CommonDigest.h>
 #import "TextInputCell.h"
 
-
-#define kUserIDKeyString          @"UserIDKeyString"
-#define kTokenKeyString             @"TokenKeyString"
-#define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
-#define salt                        @"FSF^D&*FH#RJNF@!$JH#@$"
-
 @interface LoginViewController ()
 
 @end
@@ -190,10 +184,6 @@
 		[loginAlert show];
 		
 	} else {
-		
-		UIAlertView *loginAlert = [[UIAlertView alloc] initWithTitle:@"Login Success" message:@"Proper login, thanks!" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-		
-		[loginAlert show];
 		
 		// Save userID to keychain
 		[Lockbox setString:[response valueForKeyPath:@"userID"] forKey:kUserIDKeyString];

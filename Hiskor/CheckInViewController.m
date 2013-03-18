@@ -14,9 +14,6 @@
 #import "MBProgressHUD.h"
 #import "GamesTableViewCell.h"
 
-#define kUserIDKeyString          @"UserIDKeyString"
-#define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
-
 @interface CheckInViewController ()
 
 @end
@@ -27,8 +24,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-    //NSLog(@"Game Data: %@", gameData);
+    
+    if ([[Lockbox stringForKey:@"LoggedinStatusKeyString"] isEqualToString:@"TRUE"]) {
+        [self loadGames];
+    }
+    
     [self.refreshControl addTarget:self action:@selector(refreshView:) forControlEvents:UIControlEventValueChanged];
 }
 
@@ -213,10 +213,6 @@
 	
 	NSLog(@"Error with request");
 	NSLog(@"%@", [error localizedDescription]);
-}
-
-- (IBAction)refreshGames:(id)sender {
-    [self loadGames];
 }
 
 - (void)refresh {

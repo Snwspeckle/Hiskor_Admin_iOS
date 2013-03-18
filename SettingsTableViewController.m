@@ -10,9 +10,6 @@
 #import "TabBarViewController.h"
 #import "Lockbox.h"
 
-#define kUserIDKeyString            @"UserIDKeyString"
-#define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
-
 @interface SettingsTableViewController ()
 
 @end
@@ -23,9 +20,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    labelEmail.text = @"Email value";
-    labelSchool.text = @"School value";
     
+    if ([[Lockbox stringForKey:@"LoggedinStatusKeyString"] isEqualToString:@"TRUE"]) {
+        [self loadSettings];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -59,9 +57,7 @@
             [loginAlert show];
             
         } else {
-            NSLog(@"Settings Response: %@", response);
             JSONResponse = [response copy];
-            //settings = [JSONResponse objectForKey:@"games"];
             labelEmail.text = [JSONResponse objectForKey:@"email"];
             labelSchool.text = [JSONResponse objectForKey:@"schoolName"];
             [self.tableView reloadData];

@@ -10,8 +10,6 @@
 #import "LoginViewController.h"
 #import "Lockbox.h"
 
-#define kLoggedinStatusKeyString    @"LoggedinStatusKeyString"
-
 @interface TabBarViewController ()
 
 @end
