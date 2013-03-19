@@ -59,7 +59,6 @@
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
                             gameID, @"gameID",
-                            ticketCode, @"ticketCode",
                             type, @"type",
                             nil];
     
