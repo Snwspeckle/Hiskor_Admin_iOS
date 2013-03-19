@@ -46,6 +46,7 @@
 		8F7F09FD16B30B71005F124D /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7F09F416B30B71005F124D /* UIImageView+AFNetworking.m */; };
 		8F7F09FF16B30BD0005F124D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7F09FE16B30BD0005F124D /* SystemConfiguration.framework */; };
 		8F7F0A0116B30BEB005F124D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7F0A0016B30BEB005F124D /* MobileCoreServices.framework */; };
+		8F9B9CED16F8CED90079E375 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B9CEC16F8CED90079E375 /* SettingsTableViewController.m */; };
 		8FC502FD16DFD48400237DE1 /* GamesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC502FC16DFD48400237DE1 /* GamesTableViewCell.m */; };
 		8FC5030016DFD75300237DE1 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC502FF16DFD75300237DE1 /* CheckInViewController.m */; };
 		8FC5030216E11FFC00237DE1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5030116E11FFC00237DE1 /* AVFoundation.framework */; };
@@ -78,7 +79,6 @@
 		8FF8508716EF95DB00C4B8C7 /* nav-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8508516EF95DB00C4B8C7 /* nav-button@2x.png */; };
 		8FF8508A16F0E7C400C4B8C7 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8508916F0E7C400C4B8C7 /* PullRefreshTableViewController.m */; };
 		8FF8508D16F0E7D500C4B8C7 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FF8508C16F0E7D500C4B8C7 /* arrow.png */; };
-		8FF850AE16F0F11500C4B8C7 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF850AD16F0F11500C4B8C7 /* SettingsTableViewController.m */; };
 		9236811B16BA29DD008384CD /* Lockbox.m in Sources */ = {isa = PBXBuildFile; fileRef = 9236811A16BA29DD008384CD /* Lockbox.m */; };
 		9236811D16BA2B6C008384CD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9236811C16BA2B6C008384CD /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -160,6 +160,8 @@
 		8F7F09F416B30B71005F124D /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		8F7F09FE16B30BD0005F124D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8F7F0A0016B30BEB005F124D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8F9B9CEB16F8CED90079E375 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		8F9B9CEC16F8CED90079E375 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		8FC502FB16DFD48400237DE1 /* GamesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesTableViewCell.h; sourceTree = "<group>"; };
 		8FC502FC16DFD48400237DE1 /* GamesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesTableViewCell.m; sourceTree = "<group>"; };
 		8FC502FE16DFD75300237DE1 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
@@ -198,8 +200,6 @@
 		8FF8508816F0E7C400C4B8C7 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
 		8FF8508916F0E7C400C4B8C7 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
 		8FF8508C16F0E7D500C4B8C7 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		8FF850AC16F0F11400C4B8C7 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = ../SettingsTableViewController.h; sourceTree = "<group>"; };
-		8FF850AD16F0F11500C4B8C7 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = ../SettingsTableViewController.m; sourceTree = "<group>"; };
 		9236811916BA29DD008384CD /* Lockbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lockbox.h; sourceTree = "<group>"; };
 		9236811A16BA29DD008384CD /* Lockbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lockbox.m; sourceTree = "<group>"; };
 		9236811C16BA2B6C008384CD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -347,8 +347,8 @@
 				8F4EE5DA16B845AA003F6C74 /* TabBarViewController.m */,
 				8FC502FE16DFD75300237DE1 /* CheckInViewController.h */,
 				8FC502FF16DFD75300237DE1 /* CheckInViewController.m */,
-				8FF850AC16F0F11400C4B8C7 /* SettingsTableViewController.h */,
-				8FF850AD16F0F11500C4B8C7 /* SettingsTableViewController.m */,
+				8F9B9CEB16F8CED90079E375 /* SettingsTableViewController.h */,
+				8F9B9CEC16F8CED90079E375 /* SettingsTableViewController.m */,
 				8FC5030F16E121BF00237DE1 /* Customized Views */,
 				8F7F09AC16B2FAF3005F124D /* Supporting Files */,
 			);
@@ -591,7 +591,7 @@
 				8FDBC78716EA5A5700BDF9DA /* TextInputCell.m in Sources */,
 				8FDBC78A16EA682200BDF9DA /* VerticallyCenteredTextField.m in Sources */,
 				8FF8508A16F0E7C400C4B8C7 /* PullRefreshTableViewController.m in Sources */,
-				8FF850AE16F0F11500C4B8C7 /* SettingsTableViewController.m in Sources */,
+				8F9B9CED16F8CED90079E375 /* SettingsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
