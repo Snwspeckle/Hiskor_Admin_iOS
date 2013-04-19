@@ -47,6 +47,8 @@
 		8F7F09FF16B30BD0005F124D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7F09FE16B30BD0005F124D /* SystemConfiguration.framework */; };
 		8F7F0A0116B30BEB005F124D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7F0A0016B30BEB005F124D /* MobileCoreServices.framework */; };
 		8F9B9CED16F8CED90079E375 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9B9CEC16F8CED90079E375 /* SettingsTableViewController.m */; };
+		8FA2C382171C73C000428BE7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2C380171C73C000428BE7 /* Icon.png */; };
+		8FA2C383171C73C000428BE7 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FA2C381171C73C000428BE7 /* Icon@2x.png */; };
 		8FC502FD16DFD48400237DE1 /* GamesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC502FC16DFD48400237DE1 /* GamesTableViewCell.m */; };
 		8FC5030016DFD75300237DE1 /* CheckInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC502FF16DFD75300237DE1 /* CheckInViewController.m */; };
 		8FC5030216E11FFC00237DE1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5030116E11FFC00237DE1 /* AVFoundation.framework */; };
@@ -57,8 +59,6 @@
 		8FC5030E16E1218800237DE1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC5030D16E1218800237DE1 /* MBProgressHUD.m */; };
 		8FC5031416E5250600237DE1 /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031016E5250500237DE1 /* 37x-Checkmark.png */; };
 		8FC5031516E5250600237DE1 /* 37x-Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */; };
-		8FC5031616E5250600237DE1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031216E5250500237DE1 /* Icon.png */; };
-		8FC5031716E5250600237DE1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FC5031316E5250600237DE1 /* Icon@2x.png */; };
 		8FDBC76516E67AE700BDF9DA /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC76316E67AE700BDF9DA /* Button.png */; };
 		8FDBC76616E67AE700BDF9DA /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC76416E67AE700BDF9DA /* Button@2x.png */; };
 		8FDBC77816E90F1C00BDF9DA /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FDBC77316E90F1C00BDF9DA /* greyButton.png */; };
@@ -162,6 +162,8 @@
 		8F7F0A0016B30BEB005F124D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8F9B9CEB16F8CED90079E375 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		8F9B9CEC16F8CED90079E375 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		8FA2C380171C73C000428BE7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		8FA2C381171C73C000428BE7 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		8FC502FB16DFD48400237DE1 /* GamesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamesTableViewCell.h; sourceTree = "<group>"; };
 		8FC502FC16DFD48400237DE1 /* GamesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamesTableViewCell.m; sourceTree = "<group>"; };
 		8FC502FE16DFD75300237DE1 /* CheckInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckInViewController.h; sourceTree = "<group>"; };
@@ -175,8 +177,6 @@
 		8FC5030D16E1218800237DE1 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		8FC5031016E5250500237DE1 /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
 		8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark@2x.png"; sourceTree = "<group>"; };
-		8FC5031216E5250500237DE1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		8FC5031316E5250600237DE1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		8FDBC76316E67AE700BDF9DA /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
 		8FDBC76416E67AE700BDF9DA /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
 		8FDBC77316E90F1C00BDF9DA /* greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButton.png; sourceTree = "<group>"; };
@@ -341,9 +341,9 @@
 				8F7F09BD16B2FAF3005F124D /* MainStoryboard.storyboard */,
 				8F4EE5D516B84181003F6C74 /* LoginViewController.h */,
 				8F4EE5D616B84181003F6C74 /* LoginViewController.m */,
+				8F4EE5D916B845AA003F6C74 /* TabBarViewController.h */,
 				440EB4AF16D69AD30090DC36 /* NetworkingManager.h */,
 				440EB4B016D69AD30090DC36 /* NetworkingManager.m */,
-				8F4EE5D916B845AA003F6C74 /* TabBarViewController.h */,
 				8F4EE5DA16B845AA003F6C74 /* TabBarViewController.m */,
 				8FC502FE16DFD75300237DE1 /* CheckInViewController.h */,
 				8FC502FF16DFD75300237DE1 /* CheckInViewController.m */,
@@ -374,6 +374,8 @@
 		8F7F09D716B3032F005F124D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				8FA2C380171C73C000428BE7 /* Icon.png */,
+				8FA2C381171C73C000428BE7 /* Icon@2x.png */,
 				8FF8508416EF95DB00C4B8C7 /* nav-button.png */,
 				8FF8508516EF95DB00C4B8C7 /* nav-button@2x.png */,
 				8FF8507816EF92F200C4B8C7 /* nav-back-button.png */,
@@ -394,8 +396,6 @@
 				8F5E162F16E66CBD00A46D37 /* invalid.png */,
 				8FC5031016E5250500237DE1 /* 37x-Checkmark.png */,
 				8FC5031116E5250500237DE1 /* 37x-Checkmark@2x.png */,
-				8FC5031216E5250500237DE1 /* Icon.png */,
-				8FC5031316E5250600237DE1 /* Icon@2x.png */,
 				8F7F09DF16B30422005F124D /* house.png */,
 				8F7F09D916B30348005F124D /* gear.png */,
 				8F7F09DA16B30348005F124D /* ticket.png */,
@@ -539,8 +539,6 @@
 				44B5E52716CC0B0000F538A5 /* zbar-samples.png in Resources */,
 				8FC5031416E5250600237DE1 /* 37x-Checkmark.png in Resources */,
 				8FC5031516E5250600237DE1 /* 37x-Checkmark@2x.png in Resources */,
-				8FC5031616E5250600237DE1 /* Icon.png in Resources */,
-				8FC5031716E5250600237DE1 /* Icon@2x.png in Resources */,
 				8F5E163016E66CBD00A46D37 /* valid.png in Resources */,
 				8F5E163116E66CBD00A46D37 /* invalid.png in Resources */,
 				8FDBC76516E67AE700BDF9DA /* Button.png in Resources */,
@@ -560,6 +558,8 @@
 				8FF8508616EF95DB00C4B8C7 /* nav-button.png in Resources */,
 				8FF8508716EF95DB00C4B8C7 /* nav-button@2x.png in Resources */,
 				8FF8508D16F0E7D500C4B8C7 /* arrow.png in Resources */,
+				8FA2C382171C73C000428BE7 /* Icon.png in Resources */,
+				8FA2C383171C73C000428BE7 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

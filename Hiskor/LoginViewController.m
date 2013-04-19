@@ -25,7 +25,7 @@
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"tasky_pattern.png"]];
     
     // Creates the login form
-    mainLoginInfo  = [[UITableView alloc] initWithFrame:CGRectMake(15,110, 300,150) style:UITableViewStyleGrouped];
+    mainLoginInfo  = [[UITableView alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 300) / 2,110, 300,150) style:UITableViewStyleGrouped];
     mainLoginInfo.dataSource = self;
     mainLoginInfo.delegate = self;
     [self.view addSubview:mainLoginInfo];

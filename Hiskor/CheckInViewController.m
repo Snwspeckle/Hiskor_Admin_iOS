@@ -58,6 +58,7 @@
     NSString *type = @"checkTicket";
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
+                            ticketCode, @"ticketCode",
                             gameID, @"gameID",
                             type, @"type",
                             nil];
@@ -135,9 +136,11 @@
     // ADD: get the decode results
     id<NSFastEnumeration> results = [info objectForKey: ZBarReaderControllerResults];
     ZBarSymbol *symbol = nil;
-    for(symbol in results)
+    for(symbol in results) {
         // EXAMPLE: just grab the first barcode
+    
         break;
+    }
     
     // EXAMPLE: do something useful with the barcode data
     resultText.text = symbol.data;
